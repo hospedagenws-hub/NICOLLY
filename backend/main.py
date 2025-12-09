@@ -14,16 +14,16 @@ from pydantic import BaseModel
 
 BASE_DIR = Path(__file__).parent
 DB_PRODUTOS = BASE_DIR / "produtos.json"
-DB_PAGAMENTOS = BASE_DIR / "17c8373f22c68cadfae710549f71d730dc341edcf026864e72756fec82b4cb35"
+DB_PAGAMENTOS = BASE_DIR / "pagamentos.json"
 
 # 1) AGORA CERTO: pega o token da variável de ambiente MP_ACCESS_TOKEN
 MP_ACCESS_TOKEN = os.getenv("MP_ACCESS_TOKEN")
 
 if not MP_ACCESS_TOKEN:
     raise RuntimeError(
-        MP_ACCESS_TOKEN = " "17c8373f22c68cadfae710549f71d730dc341edcf026864e72756fec82b4cb35""
         "Defina a variável de ambiente MP_ACCESS_TOKEN com o token do Mercado Pago."
     )
+
 
 MP_API_BASE = "https://api.mercadopago.com"
 
@@ -330,3 +330,4 @@ def raiz():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+
