@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nome": "E-book O Poder do Primeiro Passo",
+    "descricao": "E-book prático e direto ao ponto para te ajudar a sair da inércia e criar o hábito do treino, mesmo com rotina corrida.",
+    "preco": 29.9,
+    "tipo": "digital",
+    "precisa_frete": false,
+    "imagem_url": "https://SEU-DOMINIO-DO-INDEX.com/capa-ebook.png"
+  }
+]
